@@ -35,7 +35,7 @@ public class Equipos implements Serializable {
 	@OneToMany(mappedBy = "equiposByEquipoVisitante",cascade= CascadeType.ALL)
 	private Set<Partidos> partidosesForEquipoVisitante = new HashSet<Partidos>(0);
 	
-	@OneToMany(mappedBy = "equiposByEquipoLocalcascade",cascade= CascadeType.ALL)
+	@OneToMany(mappedBy = "equiposByEquipoLocal",cascade= CascadeType.ALL)
 	private Set<Partidos> partidosesForEquipoLocal = new HashSet<Partidos>(0);
 
 	public Equipos() {
@@ -112,4 +112,11 @@ public class Equipos implements Serializable {
 		this.partidosesForEquipoLocal = partidosesForEquipoLocal;
 	}
 
+	@Override
+	public String toString() {
+		return nombre;
+	}
+
+	
+	
 }

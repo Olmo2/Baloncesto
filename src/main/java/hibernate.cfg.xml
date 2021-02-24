@@ -9,5 +9,11 @@ Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernateconfiguration-
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.show_sql">true</property>
+		
+		<mapping class="com.olmo.Baloncesto.entity.Equipos"/>
+		<mapping class="com.olmo.Baloncesto.entity.Estadisticas"/>
+		<mapping class="com.olmo.Baloncesto.entity.EstadisticasId"/>
+		<mapping class="com.olmo.Baloncesto.entity.Jugadores"/>
+		<mapping class="com.olmo.Baloncesto.entity.Partidos"/>
 	</session-factory>
 </hibernate-configuration>
